@@ -1,68 +1,377 @@
-<!--
-Victoria Huynh
-4/9/2018
-Section: CSE 154 AI
-
-This is the homepage for my personal website. 
--->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Victoria's Page</title>
-        <link type="text/css" href="index.css" rel="stylesheet" />
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="nav">
-                <img src="miscimages/victoria.jpeg" alt="A picture of me!" class="profile" />
-                <h1>Victoria Huynh</h1>
-                <a class="active" href="index.html">Home</a>
-                <a href="aboutme.html">About Me</a>
-                <a href="favorites.html">Music</a>
-            </div>
-        </header>
-        <main id="main-page">
-            <aside class="column">
-                <h2>Welcome to my website!</h2>
-                <p>This is a personal site I am making for my CSE 154 class.</p>
-                <p>It is intended to document the various web programming techniques I learn over 
-                    the course of the quarter.</p>
-                <p>Feel free to explore the site using the navigation bar above!</p>        
-            </aside>
-            <section class="column"> 
-                <h2>Spring 2018</h2>
-                <p>What classes am I taking this quarter? Great question!</p>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victoria Huynh</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <div class="intro-text">
+              <h1>Victoria Huynh</h1>
+              <p>aspiring software developer</p>
+              <a href="#contact" class="btn btn-custom btn-lg page-scroll">About Me</a>
+              <a href="#portfolio" class="btn btn-custom btn-lg page-scroll">Portfolio</a>
+              <a href="#resume" class="btn btn-custom btn-lg page-scroll">Resume</a>
+              <div class="social">
                 <ul>
-                    <li>CSE 154 (obviously)</li>
-                    <li>MATH 126</li>
-                    <li>LING 269</li>
+                  <li><a href="https://github.com/victoriahuynh"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://linkedin.com/in/huynhvictoria"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.facebook.com/notthrowingawaymyshot"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/victorioushuynh/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="mailto:victoriahuynh99@gmail.com"><i class="fa fa-envelope"></i></a></li>
                 </ul>
-            </section>
-            <section class="column">
-                <h2>Dogs!!</h2>
-                <p>Fun fact! I love dogs! Click the button to randomly generate a dog!!</p>
-                <button id="pupper">Doggo!</button>
-                <img id="doggo" />
-            </section>
-            <section class="column"> 
-                <h2>Pig Latin!!</h2>
-                <p>Check out my Pig Latin translator. Put in a word and see what
-                it would look like in Pig Latin!</p>
-                 <fieldset>
-                  <legend>Pig Latin Translator</legend>
-                  <textarea rows="10" cols="50" id="text"></textarea>
-                  <button id="button">Translate!</button>
-                </fieldset> 
-                <fieldset>
-                    <legend>Output</legend>
-                    <textarea rows="10" cols="50" id="output"></textarea>
-                </fieldset>
-            </section>
-        </main>
-        <footer>
-            <p>Hellooooo.</p>
-        </footer>
-    </body>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="row">
+      <div class="col">
+        <img src="img/about.jpg" class="img-responsive pull-left" alt="">
+      </div>
+      <div class="col">
+        <p>Hi! I'm Victoria and I am a current second-year undergraduate student at the University of Washington.</p>
+        <p>I first became passionate about computer science when I did the Girls Who Code program at Expedia
+          the summer after my sophomore year of high school. I later involved myself in tech in other ways, through AP
+          Computer Science and Cisco Networking Academy at my school and by winning the NCWIT Aspirations in Computing Award for my region.
+          I also spent all four years on my school's FIRST robotics team, working first on the electrical team and the media team, and then as the VP of Marketing.
+         We made it to world championships in 2015 and 2017!</p>
+        <p>I later had the opportunity to intern at Expedia twice, after my junior and senior years.
+            The first summer, I worked in Expedia Partner Central on the Rooms & Rates Team, and was
+            tasked to update their pages to make them streamlined, comprehensive, and mobile-optimized.
+            The second summer, I worked in Expedia Data Engineering on the Loyalty team and the Partner
+            Marketing team. On the former, I learned about BI development, working with Teradata and
+            Qlikview to run data validation to identify and resolve errors on dashboards. On the latter,
+            I created a dynamic file watcher using Python to review daily data feeds and alert the team when
+            feeds were missing.</p>
+        <p>Since starting at UW, I've tried to keep myself involved by finding tech clubs on campus to join
+          and attending hackathons. This past summer, I made my own contribution towards closing the gender gap
+          in tech by being a TA for Girls Who Code at Adobe! It was really rewarding going back to the program
+         that started it all for me, this time being the one helping inspire others.</p>
+         <p>I'm still looking for an internship for Summer 2019, please feel free to contact me!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <h2>Things I've Done! (WIP)</h2>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".lorem">Experiences</a></li>
+            <li><a href="#" data-filter=".dolor">Projects</a></li>
+            <li><a href="#" data-filter=".adipiscing">Fun Stuff</a></li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/gwcta.jpg" title="Girls Who Code TA" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>Girls Who Code TA</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/gwcta.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <!--<div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>2</h4>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Expedia Apprentice 2017"> </a> </div>
+              <p></p>
+          </div>
+        </div>-->
+        <div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/expedia2017-2.jpg" title="Expedia Apprentice 2017" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>Expedia Apprentice 2017</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/expedia2017.jpg" class="img-responsive" alt="Expedia Apprentice 2017"> </a> </div>
+          </div>
+        </div>
+        <!--<div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="NCWIT Aspirations in Computing" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>NCWIT Aspirations in Computing</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="NCWIT Aspirations in Computing"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>4</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 dolor">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>5</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 dolor">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>6</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div> -->
+        <div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/expedia2016-2.jpg" title="Expedia Apprentice 2016" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>Expedia Apprentice 2016</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/expedia2016.jpg" class="img-responsive" alt="Expedia Apprentice 2016"> </a> </div>
+          </div>
+        </div>
+        <!--
+        <div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>8</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>9</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>10</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      -->
+        <div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/robotics.jpg" title="FIRST Robotics Student" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>FIRST Robotics Student</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/robotics-2.jpg" class="img-responsive" alt="FIRST Robotics Student"> </a> </div>
+          </div>
+        </div>
+        <!--<div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/13-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>12</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/13-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 dolor">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/14-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>13</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/14-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 dolor">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/15-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>14</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/15-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>-->
+        <div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/ncwit.jpg" title="NCWIT Aspirations in Computing" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>NCWIT Aspirations in Computing</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/ncwit.jpg" class="img-responsive" alt="NCWIT Aspirations in Computing"> </a> </div>
+          </div>
+        </div>
+        <!--<div class="col-sm-6 col-md-4 adipiscing">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/17-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>16</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/17-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>-->
+        <div class="col-sm-6 col-md-4 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/gwcproject.jpg" title="Girls Who Code Student" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>Girls Who Code Student</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/girlswhocode.jpg" class="img-responsive" alt="Girls Who Code Student"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Resume Section -->
+<div id="resume">
+  <div class="row text-center to fh">
+	<div class="ti">
+		<h2 id="resume"><a href="img/resume.pdf" target="_blank">View my resume</a></h2>
+	</div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p>&copy; 2018 Victoria Huynh. Made with ❤️ in Seattle.</p>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
