@@ -49,6 +49,7 @@ p.intro {
 	line-height: 24px;
 }
 a {
+	font-family: 'Roboto', sans-serif;
 	color: #222;
 }
 a:hover, a:focus {
@@ -235,7 +236,13 @@ ol.type li a:hover {
 }
 .hover-bg:hover .hover-text {
 	opacity: 1;
+	background-color: #fedcd2;
 }
+
+.overlay-content .click {
+	color: #0000EE;
+}
+
 /* Resume Section */
 #resume {
 	padding: 70px 0 70px 0;
