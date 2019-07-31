@@ -44,9 +44,11 @@ p {
 	font-weight: 400;
 	color: #888;
 }
-.intro p {
+p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
+}
+.col p {
 	margin-left: 350px;
 }
 a {
