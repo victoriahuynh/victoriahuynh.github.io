@@ -30,7 +30,7 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-ideas:before { content: "\f100"; }
+.flaticon-ideas:before { content: url("img/portfolio/laptop.png"); }
 .flaticon-flasks:before { content: "\f101"; }
 .flaticon-analysis:before { content: "\f102"; }
 .flaticon-ux-design:before { content: "\f103"; }
