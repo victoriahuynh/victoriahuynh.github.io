@@ -1,2 +1,2 @@
 # victoriahuynh.github.io
-My own personal website.
+Older version of my personal website.
